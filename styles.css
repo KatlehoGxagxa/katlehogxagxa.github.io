@@ -180,6 +180,17 @@ body {
     }
 }
 
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card i {
+    font-size: smaller;
+    padding-left: 100%;
+    padding-top: auto;
+}
+
 footer {
     position: relative;
     color: #898989;
@@ -191,3 +202,107 @@ footer p {
     text-align: left !important;
     font-size: smaller;
 }
+
+.socials {
+    background-color: #4DFFBC;
+}
+
+.contacts {
+    position: relative;
+    margin-top: 55px;
+}
+
+.socials {
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 150px;          /* Sets the tiny width */
+    height: 150px;         /* Sets the tiny height to match */
+    border-radius: 50%;   /* Makes the container a perfect circle */
+    overflow: hidden;     /* Hides the square corners of the image */
+    display: inline-block; /* Keeps it behaving well inline with text if needed */
+}
+
+.profile-picture img {
+    width: 100%;          /* Forces image to fill the container width */
+    height: 100%;         /* Forces image to fill the container height */
+    object-fit: cover;    /* Prevents distortion by cropping instead of squishing */
+    object-position: center; /* Centers the crop */
+}
+
+.invitation {
+    background-color: #e4e4e4;
+    border-style: none;
+    width: fit-content;
+    height: auto;
+    border-radius: .5em;
+    padding: 2em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.invitation a {
+    text-decoration: none;
+    color: rgb(135, 159, 180);
+}
+
+.invitation span {
+    font-weight: bold;
+}
+
+.media-profiles {
+    padding: 1em;
+}
+
+.media-profiles a {
+    font-size: xx-large;
+}
+
+.contact-form {
+    position: relative;
+    padding: 1em;
+    text-align: center;
+}
+
+.contact-form h1 {
+    color: #898989;
+    text-align: center;
+}
+
+.contact-form form .names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form form .names input {
+    width: 40vw;
+    height: 30px;
+    margin: .5em;
+    padding: .5em;
+    border-radius: .2em;
+    border-style: none;
+}
+
+.contact-form form textarea {
+    width: 40vw;
+    height: 250px;
+    margin: 1em;
+    padding: .5em;
+    border-radius: .2em;
+    border-style: none;
+}
+
+.contact-form form .message-button button {
+    width: 41vw;
+    height: 40px;
+    margin: 1em;
+    padding: .5em;
+    border-radius: .2em;
+    border-style: none;
+}
+
