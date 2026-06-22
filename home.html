@@ -3,65 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" href="images/chara_shiro.png" type="image/png">
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="fontawesome/css/brands.min.css">
-    <link rel="stylesheet" href="fontawesome/css/solid.min.css">
+    <title>About</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navigation">
-        <div class="menu">
-            <a href="home.html">Home</a>
-            <a href="blog.html">Blog</a>
+    <div class="nav-prof-section">
+        <nav class="navigation">
+            <a href="home.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
-        </div>
-    </nav>
-    <main class="main-profile">
-        <div class="profile">
-            <div class="profile-img">
-                <img src="images/Katleho-Gxagxa-Profile-Picture.jpg" alt="a picture of a good man.">
-            </div>
-            <div class="name">
-                <h1>Katleho Gxagxa</h1>
-                <h2>Software Engineer, <a href="https://www.agentsofchangesa.org.za/" target="_blank">Agents of Change, South Africa</a></h2>
+        </nav>
+        
+        <div class="profile-container">
+            <div class="essentials">
+                <h1 class="full-name">
+                    <span>Katleho Gxagxa</span>
+                </h1>
+                <h3 class="role">Software Developer, & Data Analyst</h3>
+                <h4 class="org">Agents of Change, South Africa</h4>
                 <div class="media">
-                    <a href="https://www.linkedin.com/in/katleho-gxagxa-9b1b4a1b2/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/katlehogxagxa" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:katlehogxagxa@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.reddit.com/user/katlehogxagxa/" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+                    <i class="fa-brands fa-kaggle"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
                 </div>
             </div>
-        </div>
-        <div class="career-description">
-            <div class="description">
-                <!-- <h1>About Me</h1> -->
-            <p>I am a passionate software engineer with experience in developing scalable web applications. I have a strong foundation in computer science and a keen interest in emerging technologies.
-                <br> I have employed my skills in various projects, chief of which is the development of the <a href="https://www.agentsofchangesa.org.za/" target="_blank">Agents of Change, South Africa's</a> University Applications helper app.
-                I focused my skills on building a secure and efficient backend using the Django and Django Rest Framework.
-            </p>
+            <div class="profile-img">
+                <img src="assets/images/Katleho-Gxagxa-Profile-Picture.jpg" alt="A picture of a good man.">
             </div>
         </div>
+    </div>
+    <div class="role-description">
+        <p class="description">
+            I'm a freelance software developer (Full-stack), & a data analyst. <br>
+            With training in Economics, my interests tend towards Artificial Intelligence and it's current and possible societal impacts. <br>
+            I'm currently preparing for a future where increased reliance on AI, benefits society as whole, and not a select few. <br>
+            To this end, I lend my services and time, to a local NPO - <a href="">Agents of Change, South Africa</a> - as part of their developer team.
 
-        <div class="updates">
-            <h1>Updates</h1>
-            <div class="updates-cards">
-                <div class="card">In 2017, I enjoyed the honour of being accepted into Economic Science (BEconSci), at the University of the Witwatersrand, Johannesburg.</div>
-                <div class="card"><a href="">I completed a fruitful course on Data Analytics with Google Coursera, December 2023. To supplement my analytical skills sharpened at Wits.</a><i class="fa fa-external-link" aria-hidden="true"></i></div>
-                <div class="card"><a href="">I also completed the challenging CS50's Introduction to Programming with Python, CS50P. Taking away many valuable skills and programming tools. Completed in 2025</a><i class="fa fa-external-link" aria-hidden="true"></i></div>
-                <div class="card"><a href="">I covered the essentials of Relational Database Management Systems and SQL with CS50's Carter Zenke, completing CS50SQL in 2026.</a><i class="fa fa-external-link" aria-hidden="true"></i></div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; <span id="year"></span> Katleho Gxagxa. All rights reserved.</p>
+        </p>
+    </div>
+    <div class="curriculum-vitae">
+        <h2>Curriculum Vitae</h2>
+        <span>For a full background - <a href=""><button>Curriculum Vitae</button></a></span>
+    </div>
+    <div class="updates">
+        <h2>Updates</h2>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <span class="timeline-date">2026</span>
+                <div class="timeline-content">
+                    <h3>CS50's Web Programming with Python and Javascript</h3>
+                    <p>Completed the CS50 certificate for web development with Python and Javascript.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-date">2025</span>
+                <div class="timeline-content">
+                    <h3>CS50's Introduction to Databases with SQL</h3>
+                    <p>Completed the CS50 certificate, working relational databases with SQL.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-date">2025</span>
+                <div class="timeline-content">
+                    <h3>Agents of Change, South Africa</h3>
+                    <p>Begun Volunteer work, with developer team at AoC.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-date">2024</span>
+                <div class="timeline-content">
+                    <h3>CS50's Introduction to Programming with Python</h3>
+                    <p>Completed the CS50 certificate, learned invaluable Python skills.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-date">2024</span>
+                <div class="timeline-content">
+                    <h3>BSc in Mathematical Science (Actuarial Science) - University of Johannesburg</h3>
+                    <p>Enrolled into the above-mentioned course at the University of Johannesburg.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-date">2023</span>
+                <div class="timeline-content">
+                    <h3>Data Analytics, Google Coursera</h3>
+                    <p>Completed a data analytics certificate with Google's Coursera.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-date">2023</span>
+                <div class="timeline-content">
+                    <h3>Macsteel Service Centres</h3>
+                    <p>Took a year-long contract at Macsteel VRN, Roodekop.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <span class="timeline-date">2017</span>
+                <div class="timeline-content">
+                    <h3>BEconSc (Economic Science) - University of the Witwatersrand, Johannesburg</h3>
+                    <p>Enrolled into the above-mentioned course at Wits University.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="site-footer">
+        <p class="footer-copy">
+            <i class="fa-regular fa-copyright" aria-hidden="true"></i>
+            <span id="footer-year"></span> Katleho Gxagxa. All rights reserved.
+        </p>
     </footer>
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
 
     <script>
-    // Automatically updates the HTML with the current year
-        document.getElementById("year").textContent = new Date().getFullYear();
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+        document.querySelectorAll('.navigation a').forEach(link => {
+            const linkPage = link.getAttribute('href').split('/').pop();
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            }
+        });
     </script>
+    
 </body>
 </html>
