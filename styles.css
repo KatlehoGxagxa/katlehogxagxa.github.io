@@ -43,12 +43,12 @@ body {
 }
 
 .navigation a:hover {
-    background-color: var(--accent-light);
+    background-color: var(--bg-alt);
     border-radius: .25rem;
 }
 
 .navigation a.active {
-    box-shadow: 0 2px 0 0 var(--accent);
+    box-shadow: 0 2px 0 0 var(--accent-light);
 }
 
 /* Hero: image left, essentials right */
@@ -120,9 +120,10 @@ body {
     padding: .2em 0;
 }
 
-.media i {
+.media a i {
     font-size: larger;
     line-height: 1.5em;
+    color: black;
 }
 
 /* ─── Role Description ──────────────────────────────────────── */
@@ -170,16 +171,18 @@ body {
 .curriculum-vitae span button {
     padding: 1em;
     width: 200px;
-    background-color: var(--accent-light);
+    background-color: white;
     border-radius: 1.5em;
-    border: .1px solid var(--accent-border);
-    color: #FDFDFE;
+    border: 2px solid var(--accent-border);
+    color: var(--accent-border);
     font-weight: bolder;
     font-size: small;
 }
 
 .curriculum-vitae span button:hover {
     cursor: pointer;
+    background-color: var(--accent-light);
+    color: var(--bg-alt);
 }
 
 /* ─── Updates / Timeline ────────────────────────────────────── */
@@ -258,6 +261,112 @@ body {
     margin: 0;
     font-size: 0.9em;
     color: #666;
+}
+
+/* --- Reach Out ----------------------------------------------- */
+
+hr {
+    width: 90%;
+    size: 2px;
+    color: var(--accent-light);
+}
+
+.reach-out {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.reach-out h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1.25rem;
+}
+
+.names-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 0.5px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #999;
+  box-shadow: 0 0 0 2px rgba(120, 120, 255, 0.12);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.confirm {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.confirm input[type="checkbox"] {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.confirm label {
+  font-size: 13px;
+  color: #888;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.8;
 }
 
 /* ─── Footer ────────────────────────────────────────────────── */

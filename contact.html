@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-prof-section">
+        <nav class="navigation">
+            <a href="home.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <div class="profile-container">
+            <div class="essentials">
+                <h1 class="full-name">
+                    <span>Katleho Gxagxa</span>
+                </h1>
+                <h3 class="role">Software Developer, & Data Analyst</h3>
+                <h4 class="org">Freelancer and/or "Digital Nomad"</h4>
+                <div class="media">
+                    <a href="https://www.kaggle.com/katleho" target="_blank"><i class="fa-brands fa-kaggle"></i></i></a>
+                    <a href="mailto:gxagxakatleho@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/katlehogxagxa" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/KatlehoGxagxa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="profile-img">
+                <img src="assets/images/Katleho-Gxagxa-Profile-Picture.jpg" alt="A picture of a good man.">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <main class="reach-out">
+        <h2>Reach Out</h2>
+        <form action="https://formspree.io/f/xnjknpzn" method="POST">
+            <div class="names">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" placeholder="First name">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="Surname" placeholder="Last name">
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" placeholder="you@example.com">
+            </div>
+            <div class="message">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message..."></textarea>
+            </div>
+            <div class="confirm">
+                <input type="checkbox" id="confirm" name="confirm" required>
+                <label for="confirm">I have checked that the details provided are correct.</label>
+            </div>
+            <div class="send-button">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-copy">
+            <i class="fa-regular fa-copyright" aria-hidden="true"></i>
+            <span id="footer-year"></span> Katleho Gxagxa. All rights reserved.
+        </p>
+    </footer>
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+
+    <script>
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+        document.querySelectorAll('.navigation a').forEach(link => {
+            const linkPage = link.getAttribute('href').split('/').pop();
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>   
+</body>
+</html>
