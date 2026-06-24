@@ -12,11 +12,53 @@
 <body>
     <div class="nav-prof-section">
         <nav class="navigation">
-            <a href="index.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="visitor-info">
+                <span id="visitor-location">Detecting location...</span>
+                <span id="visitor-datetime"></span>
+            </div>
         </nav>
-    </div>
+        
+        <script>
+            // Date & Time — updates every second
+            function updateDateTime(timezone) {
+            const now = new Date();
+            const options = {
+                timeZone: timezone,
+                weekday: 'short',
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+            };
+            document.getElementById('visitor-datetime').textContent =
+                now.toLocaleString('en-US', options);
+            }
+
+            // Location detection
+            fetch('https://ipapi.co/json/')
+            .then(res => res.json())
+            .then(data => {
+                const location = `${data.city}, ${data.country_name}`;
+                document.getElementById('visitor-location').textContent = location;
+                const timezone = data.timezone;
+                updateDateTime(timezone);
+                setInterval(() => updateDateTime(timezone), 1000);
+            })
+            .catch(() => {
+                // Fallback to local time if fetch fails
+                document.getElementById('visitor-location').textContent = 'Unknown location';
+                updateDateTime(Intl.DateTimeFormat().resolvedOptions().timeZone);
+                setInterval(() => updateDateTime(Intl.DateTimeFormat().resolvedOptions().timeZone), 1000);
+            });
+        </script>
 
     <main class="projects">
 
