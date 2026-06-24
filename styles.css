@@ -174,16 +174,16 @@ body {
     width: 200px;
     background-color: white;
     border-radius: 1.5em;
-    border: 2px solid var(--accent-border);
-    color: var(--accent-border);
+    border: 2px solid var(--text-muted);
+    color: black;
     font-weight: bolder;
     font-size: small;
 }
 
 .curriculum-vitae span button:hover {
     cursor: pointer;
-    background-color: var(--accent-light);
-    color: var(--bg-alt);
+    background-color: black;
+    color: white;
 }
 
 /* ─── Updates / Timeline ────────────────────────────────────── */
